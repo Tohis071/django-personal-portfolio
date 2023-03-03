@@ -1,0 +1,57 @@
+ul {
+ list-style: none;
+ margin: 0;
+ padding-left: 0;
+}
+li {
+    Float: left;
+    white-space: pre;
+    font-family: Papyrus, fantasy;
+}
+
+
+h1 {
+    font-family: Papyrus, fantasy;
+    font-size: 60px; 
+    padding-left: 320px; 
+    padding-top: 30px;
+    color: green;
+   
+
+}
+
+h4 {
+    font-family: Papyrus, fantasy;
+    color: blue;
+    font-size: 60px;
+}
+
+h6 {
+    font-family: Papyrus, fantasy;
+    color: red;
+    font-size: 20px;
+}
+
+.mycls1 {
+    Float: left;
+    font-family: Papyrus, fantasy;
+    margin-left: 100px;
+    padding-left: 20px;
+    
+    
+}
+
+body {
+    background: lightsteelblue;
+}
+
+.mycls2{
+    Float: left;
+    font-family: Papyrus, fantasy;
+    font-size: 20px;
+   
+}
+
+a{
+    text-decoration: none;
+}

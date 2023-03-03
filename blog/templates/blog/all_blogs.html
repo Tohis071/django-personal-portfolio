@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<dive class = "mycls1">
+
+<a href="{% url 'home' %}">HOME</a>
+</div>
+<h1>My Stories</h1>
+<h2>Anton wrote {{ blogs.count }} blog{{blogs.count|pluralize}}</h2>
+
+
+
+{% for myvar in blogs %}
+
+<div class = "mycls1">
+<a href="{% url 'bloguha:detail' myvar.id %}"><h2>{{ myvar.title}}</h2></a>
+
+<h2>{{myvar.description}}</h2>
+<h3>{{myvar.date|date:'d m y'}}</h3>
+<img src="{{myvar.image.url}}">
+</div>
+
+{% endfor %}
+{% endblock %}

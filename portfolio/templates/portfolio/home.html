@@ -1,0 +1,35 @@
+{% extends 'portfolio/base.html '%}
+{% load static %}
+{% block content %}
+
+<ul>
+    <li><a href="{% url 'bloguha:all_blogs' %}">BLOG page   </a>
+   <li> <a href="http://127.0.0.1:8000/admin/">ADMIN page</a>
+</ul>
+
+
+<h1>MY website</h1>
+
+<div>      
+<img src="{% static 'portfolio/toh2.jpg' %}" style = " border-style: outset; border-radius: 5px; padding-left: 0; margin-left: 400px; margin-bottom: 40px; width: 30%; margin-top: 30px">
+</div> 
+    
+{% for project in projects %}
+<div class = "mycls1">
+
+<h4>{{ project.title }}</h4>
+<h6>{{project.description}}</h6>
+<br><img src = "{{ project.image.url}}">
+
+{% if project.url %}
+<br><a href ="{{ project.url}}" target = "_blank">Controller</a>
+
+{% endif %}
+</div>
+
+{% endfor %}
+
+{% endblock %}
+
+
+
